@@ -1,3 +1,11 @@
 {
-  "name": "base-rails-tools"
+  "name": "base-rails-tools",
+  "env": {
+    "RACK_ENV": "production",
+    "RAILS_ENV": "production",
+    "HOST": { "required": true },
+    "LANG": { "required": true },
+    "RAILS_SERVE_STATIC_FILES": { "required": true },
+    "SECRET_KEY_BASE": { "generator": "secret" },
+  }
 }
