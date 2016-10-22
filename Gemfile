@@ -16,11 +16,35 @@ gem 'foundation-rails'
 # views
 gem "slim"
 
+group :test do
+  gem "capybara"
+  gem "codeclimate-test-reporter", require: false
+  gem "database_cleaner"
+  gem "email_spec"
+  gem "formulaic"
+  gem "launchy"
+  gem "poltergeist"
+  gem "rspec-its"
+  gem "shoulda-matchers"
+  gem "webmock", require: false
+end
+
 group :development, :test do
-  gem 'byebug', platform: :mri
+  gem "awesome_print"
+  gem "brakeman", require: false
+  gem "bundler-audit", require: false
+  gem "coffeelint"
+  gem "dotenv-rails"
+  gem "pry-rails"
+  gem "rspec-rails", "~> 3.4"
+  gem "rubocop", require: false
+  gem "rubocop-rspec", require: false
+  gem "scss_lint", require: false
+  gem "slim_lint", require: false
 end
 
 group :development do
+  gem "bullet"
   gem 'web-console'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
