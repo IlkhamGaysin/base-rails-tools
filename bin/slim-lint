@@ -5,7 +5,6 @@ rescue LoadError => e
   raise unless e.message.include?('spring')
 end
 
-require_relative '../config/boot'
-require 'rake'
+require 'bundler/setup'
 
-Rake.application.run
+load Gem.bin_path('slim_lint', 'slim-lint')

@@ -33,7 +33,7 @@ Style/SymbolArray:
   Enabled: true
 
 Style/StringLiterals:
-  EnforcedStyle: double_quotes
+  EnforcedStyle: single_quotes
   ConsistentQuotesInMultiline: true
 
 Metrics/LineLength:
