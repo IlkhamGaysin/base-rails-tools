@@ -16,6 +16,9 @@ gem 'uglifier', '>= 2.7.2'
 # views
 gem 'slim'
 
+# main
+gem 'metamagic'
+
 group :test do
   gem 'capybara'
   gem 'codeclimate-test-reporter', require: false
