@@ -34,18 +34,21 @@ group :development, :test do
   gem 'bundler-audit', require: false
   gem 'coffeelint'
   gem 'dotenv-rails'
+  gem 'listen', '~> 3.0.5'
   gem 'pry-rails'
   gem 'rspec-rails', '~> 3.4'
   gem 'rubocop', require: false
   gem 'rubocop-rspec', require: false
   gem 'scss_lint', require: false
   gem 'slim_lint', require: false
+  gem 'spring'
+  gem 'spring-commands-rspec'
+  gem 'spring-commands-rubocop'
+  gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 group :development do
   gem 'bullet'
   gem 'foreman', require: false
-  gem 'spring'
-  gem 'spring-commands-rspec'
   gem 'web-console'
 end
