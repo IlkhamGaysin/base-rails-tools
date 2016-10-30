@@ -3,8 +3,8 @@
 set -e
 
 # Setup specific Bundler options if this is CI
-if [ "$CI" ]; then
-  BUNDLER_ARGS="--without development staging production"
+if [ '$CI' ]; then
+  BUNDLER_ARGS='--without development staging production'
 fi
 
 # Make sure we have Bundler installed
