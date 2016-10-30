@@ -44,6 +44,7 @@ end
 
 group :development do
   gem 'bullet'
+  gem 'foreman', require: false
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-commands-rubocop'
