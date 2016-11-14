@@ -5,7 +5,6 @@ class FeedbacksController < ApplicationController
   end
 
   def create
-    binding.pry
     ApplicationMailer.feedback(feedback).deliver_now if feedback.valid?
     respond_with feedback, location: root_path
   end

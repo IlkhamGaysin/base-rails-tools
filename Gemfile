@@ -18,7 +18,7 @@ gem 'simple_form'
 gem 'slim'
 
 # main
-gem 'decent_exposure'
+gem 'decent_exposure', '~> 3.0.2'
 gem 'decent_decoration'
 gem 'metamagic'
 gem 'responders'
