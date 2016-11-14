@@ -3,3 +3,8 @@ en:
     submit:
       feedback:
         create: "Submit"
+  flash:
+    actions:
+    feedbacks:
+        create:
+          notice: "Email was successfully sent."
