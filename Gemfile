@@ -14,7 +14,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'uglifier', '>= 2.7.2'
 
 # views
-gem "simple_form"
+gem 'simple_form'
 gem 'slim'
 
 # main
@@ -26,9 +26,9 @@ gem 'responders'
 group :test do
   gem 'capybara'
   gem 'codeclimate-test-reporter', require: false
-  gem "database_cleaner"
-  gem "email_spec"
-  gem "formulaic"
+  gem 'database_cleaner'
+  gem 'email_spec'
+  gem 'formulaic'
   gem 'launchy'
   gem 'poltergeist'
   gem 'rspec-its'
@@ -39,11 +39,11 @@ group :development, :test do
   gem 'awesome_print'
   gem 'brakeman', require: false
   gem 'bundler-audit', require: false
-  gem "byebug"
+  gem 'byebug'
   gem 'coffeelint'
   gem 'dotenv-rails'
-  gem "factory_girl_rails"
-  gem "faker"
+  gem 'factory_girl_rails'
+  gem 'faker'
   gem 'listen', '~> 3.0.5'
   gem 'pry-rails'
   gem 'rspec-rails', '~> 3.4'

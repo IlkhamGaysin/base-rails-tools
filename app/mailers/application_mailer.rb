@@ -1,9 +1,9 @@
 class ApplicationMailer < ActionMailer::Base
   layout 'mailer'
 
-  def feedback_email(record)
+  def feedback(record)
     @feedback = record
 
-    mail to: ENV["MAILER_SENDER_ADDRESS"]
+    mail to: ENV['MAILER_SENDER_ADDRESS']
   end
 end
