@@ -1,4 +1,9 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@example.com'
   layout 'mailer'
+
+  def feedback(record)
+    @feedback = record
+
+    mail from: @feedback.email, to: ENV['FEEDBACK_RECEIVER_EMAIL']
+  end
 end

@@ -9,6 +9,7 @@ AllCops:
   Exclude:
     - bin/**/*
     - db/**/*
+    - config/**/*
     - lib/templates/**/*
     - vendor/**/*
 
@@ -59,3 +60,9 @@ Style/StringMethods:
   Enabled: true
 Rails/HasAndBelongsToMany:
   Enabled: false
+
+RSpec/MultipleExpectations:
+  Max: 7
+
+RSpec/ExampleLength:
+  Max: 12

@@ -1,0 +1,4 @@
+en:
+  application_mailer:
+    feedback_email:
+      subject: An email to tech support
