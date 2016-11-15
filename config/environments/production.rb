@@ -19,7 +19,6 @@ Rails.application.configure do
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
   # Enable Email delivery via custom SMTP server or via SendGrid by default
-
   if ENV['GMAIL_USERNAME'] && ENV['GMAIL_PASSWORD']
     config.action_mailer.delivery_method = :smtp
 
@@ -32,7 +31,6 @@ Rails.application.configure do
       enable_starttls_auto: true
     }
   end
-
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
