@@ -1,5 +1,5 @@
 class Feedback
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  VALID_EMAIL_REGEX = /\A[^@\s]+@[^@\s]+\z/
 
   include ActiveModel::Model
 
