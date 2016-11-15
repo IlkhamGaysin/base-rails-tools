@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 feature 'Create Feedback' do
-  let!(:feedback_attributes) { attributes_for(:feedback) }
+  let(:feedback_attributes) { attributes_for(:feedback) }
 
   scenario 'Visitor creates feedback' do
     visit new_feedback_path
