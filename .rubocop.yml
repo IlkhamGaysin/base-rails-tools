@@ -65,4 +65,4 @@ RSpec/MultipleExpectations:
   Max: 7
 
 RSpec/ExampleLength:
-   Max: 12
+  Max: 12
