@@ -18,6 +18,21 @@ Rails.application.configure do
   # Apache or NGINX already handles this.
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
+  # Enable Email delivery via custom SMTP server or via SendGrid by default
+  if ENV["GMAIL_USERNAME"] && ENV["GMAIL_PASSWORD"]
+    config.action_mailer.delivery_method = :smtp
+
+    config.action_mailer.smtp_settings = {
+     :address              => "smtp.gmail.com",
+     :port                 => 587,
+     :user_name            => ENV['GMAIL_USERNAME'],
+     :password             => ENV['GMAIL_PASSWORD'],
+     :authentication       => "plain",
+    :enable_starttls_auto => true
+    }
+  end
+
+
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
